@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси Валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Курси Валют</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="search-section">
+                <form>
+                    <input type="text" placeholder="Введіть місто або адресу" required>
+                    <button type="submit">Пошук</button>
+                </form>
+            </section>
+            <section class="filters-section">
+                <label for="currency">Валюта:</label>
+                <select id="currency">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <label for="exchange-type">Тип обмінного пункту:</label>
+                <select id="exchange-type">
+                    <option value="banks">Банки</option>
+                    <option value="independent">Незалежні обмінні пункти</option>
+                </select>
+                <label for="sort">Сортування:</label>
+                <select id="sort">
+                    <option value="buy-rate">Найкращий курс купівлі</option>
+                    <option value="sell-rate">Найкращий курс продажу</option>
+                </select>
+            </section>
+            <section class="exchange-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Назва</th>
+                            <th>Адреса</th>
+                            <th>Курс купівлі</th>
+                            <th>Курс продажу</th>
+                            <th>Час оновлення</th>
+                            <th>Відстань</th>
+                            <th>Деталі</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Динамічно генеровані рядки -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <aside>
+        <div class="sidebar">
+            <section class="news">
+                <h2>Новини фінансів</h2>
+                <!-- Динамічно генеровані новини -->
+            </section>
+            <section class="converter">
+                <h2>Конвертер валют</h2>
+                <form>
+                    <input type="number" placeholder="Сума" required>
+                    <select>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                    </select>
+                    <button type="submit">Конвертувати</button>
+                </form>
+            </section>
+            <section class="ads">
+                <h2>Реклама</h2>
+                <!-- Рекламні банери -->
+            </section>
+        </div>
+    </aside>
+    <footer>
+        <div class="container">
+            <section class="contact-info">
+                <p>Адреса: Вулиця 123, Місто, Країна</p>
+                <p>Телефон: +123 456 789</p>
+                <p>Email: info@example.com</p>
+            </section>
+            <section class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </section>
+            <section class="privacy-policy">
+                <a href="#">Політика конфіденційності</a>
+                <a href="#">Умови користування</a>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
